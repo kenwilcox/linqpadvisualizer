@@ -11,17 +11,9 @@ Target = typeof(System.WeakReference),
 Description = "Linqpad Visualizer")]
 namespace linqpadvisualizer
 {
-    // TODO: Add the following to SomeType's definition to see this visualizer when debugging instances of SomeType:
-    // 
-    //  [DebuggerVisualizer(typeof(LinqpadVisualizer))]
-    //  [Serializable]
-    //  public class SomeType
-    //  {
-    //   ...
-    //  }
-    // 
+   
     /// <summary>
-    /// A Visualizer for SomeType.  
+    /// A Visualizer for any types by using WeakReference.  
     /// </summary>
     public class LinqpadVisualizer : DialogDebuggerVisualizer
     {
