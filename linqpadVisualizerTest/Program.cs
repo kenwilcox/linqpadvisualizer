@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using LINQPadVisualizer;
 
-namespace linqpadVisualizerTest
+namespace LINQPadVisualizerTest
 {
-    [Serializable]
+    
     public class TestData
     {
         public int testInt { get; set; }
@@ -18,7 +19,7 @@ namespace linqpadVisualizerTest
         static void Main(string[] args)
         {
             var tst = new TestData { MyProperty="asasa", testInt=121231 };
-            linqpadvisualizer.LinqpadVisualizer.TestShowVisualizer(new System.WeakReference(tst));
+            LINQPadVisualizer4JS.TestShowVisualizer(new System.WeakReference(tst));
         }
     }
 }

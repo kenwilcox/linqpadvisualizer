@@ -5,17 +5,17 @@ using System.Linq;
 using System.Windows.Forms;
 
 [assembly: System.Diagnostics.DebuggerVisualizer(
-typeof(linqpadvisualizer.LinqpadVisualizer),
+typeof(LINQPadVisualizer.LINQPadVisualizer),
 typeof(VisualizerObjectSource),
 Target = typeof(System.WeakReference),
-Description = "Linqpad Visualizer")]
-namespace linqpadvisualizer
+Description = "LINQPad Visualizer")]
+namespace LINQPadVisualizer
 {
    
     /// <summary>
     /// A Visualizer for any types by using WeakReference.  
     /// </summary>
-    public class LinqpadVisualizer : DialogDebuggerVisualizer
+    public class LINQPadVisualizer : DialogDebuggerVisualizer
     {
         protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)
         {
@@ -40,7 +40,7 @@ namespace linqpadvisualizer
 
         // TODO: Add the following to your testing code to test the visualizer:
         // 
-        //    LinqpadVisualizer.TestShowVisualizer(new SomeType());
+        //    LINQPadVisualizer.TestShowVisualizer(new SomeType());
         // 
         /// <summary>
         /// Tests the visualizer by hosting it outside of the debugger.
@@ -48,7 +48,7 @@ namespace linqpadvisualizer
         /// <param name="objectToVisualize">The object to display in the visualizer.</param>
         public static void TestShowVisualizer(object objectToVisualize)
         {
-            VisualizerDevelopmentHost visualizerHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(LinqpadVisualizer));
+            VisualizerDevelopmentHost visualizerHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(LINQPadVisualizer));
             visualizerHost.ShowVisualizer();
         }
     }

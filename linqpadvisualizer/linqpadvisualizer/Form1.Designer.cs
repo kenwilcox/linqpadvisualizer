@@ -1,4 +1,4 @@
-﻿namespace linqpadvisualizer
+﻿namespace LINQPadVisualizer
 {
     partial class Form1
     {

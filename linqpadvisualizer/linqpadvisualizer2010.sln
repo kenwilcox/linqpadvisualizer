@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linqpadvisualizer2010", "linqpadvisualizer2010.csproj", "{EF8BED7D-67EC-4AD5-8BD6-D6F4048AC340}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linqpadvisualizer2010", "linqpadvisualizer\linqpadvisualizer2010.csproj", "{EF8BED7D-67EC-4AD5-8BD6-D6F4048AC340}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linqpadVisualizerTest", "..\..\linqpadVisualizerTest\linqpadVisualizerTest.csproj", "{E0230544-B689-4BC9-8B1C-5E1FCC0A5283}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linqpadVisualizer4Test", "..\linqpadVisualizerTest\linqpadVisualizer4Test.csproj", "{E0230544-B689-4BC9-8B1C-5E1FCC0A5283}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
