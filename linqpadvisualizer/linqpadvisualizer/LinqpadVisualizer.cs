@@ -31,7 +31,7 @@ namespace LINQPadVisualizer
             using (Form1 displayForm = new Form1())
             {
                 displayForm.Text = data.ToString();
-                var lxw = LINQPad.Util.CreateXhtmlWriter(true);
+                var lxw = LINQPad.Util.CreateXhtmlWriter(true, 50);
                 lxw.Write(wr.Target);
                 displayForm.setHTML(lxw.ToString());
                 windowService.ShowDialog(displayForm);
