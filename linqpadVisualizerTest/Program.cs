@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using LINQPadVisualizer;
 
 namespace LINQPadVisualizerTest
@@ -13,9 +10,10 @@ namespace LINQPadVisualizerTest
         public string MyProperty { get; set; }
 
     }
-    class Program
+    
+    static class Program
     {
-        
+        [STAThread]
         static void Main(string[] args)
         {
             var tst = new TestData { MyProperty="asasa", testInt=121231 };
