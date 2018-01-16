@@ -15,7 +15,7 @@ namespace LINQPadVisualizer
     /// <summary>
     /// A Visualizer for any types by using WeakReference.  
     /// </summary>
-    public class LINQPadVisualizer : DialogDebuggerVisualizer
+    public class LINQPadVisualizer : Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer
     {
         protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)
         {

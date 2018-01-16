@@ -15,13 +15,11 @@ Target = typeof(System.WeakReference),
 Description = "LINQPad Visualizer4 JS")]
 namespace LINQPadVisualizer
 {
-   
+
     /// <summary>
-    /// A Visualizer for any types by using WeakReference.  
+    /// A Visualizer for any types by using WeakReference.
     /// </summary>
-    /// 
-
-
+    ///
     public class JSObjectSource : VisualizerObjectSource
     {
         public override void GetData(object inObject, Stream outStream)
@@ -30,18 +28,18 @@ namespace LINQPadVisualizer
             var writer = new StreamWriter(outStream);
             writer.Write(s1);
             writer.Flush();
-        
+
         }
     }
 
 
-    
-    public class LINQPadVisualizer4JS : DialogDebuggerVisualizer
+
+    public class LINQPadVisualizer4JS : Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer
     {
         protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)
         {
             // TODO: Get the object to display a visualizer for.
-            //       Cast the result of objectProvider.GetObject() 
+            //       Cast the result of objectProvider.GetObject()
             //       to the type of the object being visualized.
             //object data = (object)objectProvider.GetObject();
             var s2 = new StreamReader(objectProvider.GetData()).ReadToEnd();
@@ -64,9 +62,9 @@ namespace LINQPadVisualizer
         }
 
         // TODO: Add the following to your testing code to test the visualizer:
-        // 
+        //
         //    LINQPadVisualizer.TestShowVisualizer(new SomeType());
-        // 
+        //
         /// <summary>
         /// Tests the visualizer by hosting it outside of the debugger.
         /// </summary>
@@ -79,7 +77,7 @@ namespace LINQPadVisualizer
 
 
         // the credit for this code goes to Peter Goodman - http://blog.petegoo.com/archive/2009/10/27/using-json.net-to-eval-json-into-a-dynamic-variable-in.aspx
-        // 
+        //
         public object ConvertJTokenToObject(JToken token)
         {
             if (token is JValue)
